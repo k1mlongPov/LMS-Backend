@@ -39,7 +39,7 @@ export const getCourseByIdCtrl = async  (req: Request, res: Response): Promise<v
 export const createCourseCtrl = async (req: Request, res: Response): Promise<void>=> {
     try {
         const body: CourseParams = req.body;
-        if(!body.title && !body.description && !body.instructorId) {
+        if(!body.title && !body.description && !body. instructorId) {
              res.status(400).json({
                  message: 'All fields are required',
              })

@@ -13,7 +13,7 @@ import prisma from "../config/prisma";
      },
 
      async createCourseRepo(data:CourseParams) {
-        return prisma.course.create({data});
+        return prisma.course.create({data: data});
     },
 
      async updateCourseRepo(id: string, data: CourseParams) {
