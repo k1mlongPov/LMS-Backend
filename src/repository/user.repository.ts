@@ -1,5 +1,5 @@
 import prisma from "../config/prisma";
-import {UserParams} from "./param/user.param";
+import {UserParams} from "./param/user.params";
 
 export const UserRepository = {
     async getALlUsersRepo() {
@@ -13,9 +13,7 @@ export const UserRepository = {
     },
 
     async createUserRepo(data: UserParams) {
-        return prisma.user.create({
-            data: data,
-        })
+        return prisma.user.create({data})
     },
     async  updateUserRepo(id: string, data: UserParams) {
         return prisma.user.update({

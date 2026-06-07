@@ -1,6 +1,6 @@
 import {UserRepository} from "../repository/user.repository";
 import {Response, Request} from "express";
-import {UserParams} from "../repository/param/user.param";
+import {UserParams} from "../repository/param/user.params";
 
 export const getAllUsersCtrl = async (req: Request, res: Response): Promise<void> => {
     try {
